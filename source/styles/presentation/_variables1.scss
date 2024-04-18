@@ -1,0 +1,72 @@
+.container{
+    width: 75%;
+    position: absolute;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:url(/source/assets/headbarBg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(5px);
+    
+}
+
+.container .contentmenu{
+    color: white;
+    height: 100%;
+    width: 50%;
+    backdrop-filter: blur(5px);
+    overflow: scroll;
+    overflow-x: hidden;
+    background-attachment: scroll   ;
+}
+
+.cp-btn{
+    background: transparent;
+    border-width: .1px;
+    cursor: pointer;
+    border-color: white;
+    height: 90px;
+    width: 100%;
+    outline: none;
+    color: white;
+    text-align: left;
+    left: 10px;
+    font-size: 24px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    padding: 10px;
+    text-justify: center;
+}
+
+.cp-btn:hover{
+    text-decoration: underline;
+    border-bottom: 0px;
+}
+
+.bx{
+    font-size: 40px;
+    margin:10px;
+    padding: 10px;
+}
+
+.baymaximg{
+    height: 100%;
+    width: 50%;
+
+}
+.bm{
+    padding: 100px;
+   width: 100%;
+   top: 0;
+   left:px;
+   margin-left: 600px;
+   margin-bottom: 0px;
+   transform: translateY(-92%);
+}

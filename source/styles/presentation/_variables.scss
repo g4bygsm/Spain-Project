@@ -1,0 +1,235 @@
+
+
+.container{
+    width: 75%;
+    position: absolute;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:url(/source/assets/headbarBg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: white;
+    
+}
+
+.container .content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 58%;
+    background: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container .regbox{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: calc(100% - 58%);
+    background: transparent;
+    overflow: hidden;
+}
+
+.container .content .bx-bot{
+    font-size: 45px;
+    font-family: 'Poppins';
+    align-items: center;
+    justify-content: center;
+}
+
+#title{
+    font-size: 30px;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content .socialMedia a i{
+    text-decoration: none;
+    transition: .5s ease;
+    margin-right: 20px;
+    color: white;
+}
+
+.container .content .socialMedia a i:hover{
+    transform: scale(1.2);
+}
+
+.content h2{
+    font-size: 40px;
+}
+.content span{
+    font-size: 30px;
+}
+
+.content p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.container .regbox .form-box{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    color: white;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius: 15px;
+}
+
+.container .regbox .form-box.register{
+    transform: translateX(430px);
+    transition: transform .5s ease;
+}
+.container .regbox.active .form-box.register{
+    transform: translateX(0);
+    transition-delay: 0;
+}
+
+.container .regbox .form-box.login{
+    transform: translateX(0);
+    transition: transform .6s ease;
+}
+
+.container .regbox.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+#fp{
+    color: white;
+    text-decoration: none;
+}
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input-box{
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+    position: relative;
+    width: 340px;
+    height: 50px;
+}
+.input-box input{
+    background: transparent;
+    border-color: transparent;
+    border: none;
+    outline: none;
+    margin: 15px;
+    height: 30px;
+    width: 300px;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.input-box label{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: .5s ease;
+
+    pointer-events: none;
+}
+.input-box .icon{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 20px;
+    
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.form-box .remember-forgot{
+    font-size: 16px;
+    margin:-15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+
+}
+#fp{
+    font-weight: bold;
+
+}
+
+#fp:hover{
+    text-decoration: underline;
+}
+
+
+.btn{
+    margin: 20px;
+    background-color: purple;
+    width: 100%;
+    height: 45px;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: black;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.btn:hover{
+    background-color: darkturquoise;
+}
+.btn:active{
+    scale: .90;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+}
+
+#su{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#su:hover{
+    text-decoration: underline;
+    
+}
+#li{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+#li:hover{
+    text-decoration: underline;
+    
+}
+
+#errorText{
+    display: none;
+}
